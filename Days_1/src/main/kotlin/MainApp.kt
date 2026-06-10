@@ -86,14 +86,65 @@ fun main() {
     println(address2?.count())
     address2 = "Ankara"
 
-    
+
     // null kontrol
     address2?.let {
         println("$address2 - ${address2.count()}")
     }
 
+    println("----------------------------------")
+    // Karşılaştırma Operatörleri
+    val x = 5
+    val y = 10
+    println(x == y) // Eşit mi?
+    println(x != y) // Eşit değil mi?
+    println(x > y)  // Büyük mü?
+    println(x < y)  // Küçük mü?
+    println(x >= y) // Büyük veya eşit mi?
+    println(x <= y) // Küçük veya eşit mi?
 
+    println("----------------------------------")
+    // Mantıksal Operatörler
+    var status = false
+    // && -> ve, iki veya birden fazla şartın sağlanması gerektiğinde kullanılır
+    // || -> veya, iki veya birden fazla şarttan bir tanesinin geçerli olması durumunda kullanılır.
+    // &&
+    status = x > 4 && y > 9
+    println(status)
 
+    // ||
+    status = x > 10 || y < 9
+    println(status)
+
+    println("----------------------------------")
+    // Karar kontrol yapılar
+    // if - else
+    val scrore = 90
+    if (scrore >= 55 ) {
+        println("Geçtiniz")
+    }else {
+        println("Kaldınız")
+    }
+
+    println("----------------------------------")
+    // else - if kullanımı
+    if (scrore >= 90) {
+        println("Pekiyi")
+    } else if (scrore >= 75) {
+        println("İyi")
+    } else if (scrore >= 55) {
+        println("Orta")
+    } else {
+        println("Kaldınız!!")
+    }
+
+    println("----------------------------------")
+    // else - if - expression
+    val sonuc = if (scrore >= 90) "Pekiyi"
+                else if (scrore >= 75) "İyi"
+                else if (scrore >= 55) "Orta"
+                else "Kaldınız!!"
+    println(sonuc)
 
 
 
