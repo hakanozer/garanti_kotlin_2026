@@ -13,7 +13,9 @@ class CustomerController( private val customerMapper: CustomerMapper ) {
 
     @PostMapping("register")
     fun register(@RequestBody customerCreateDto: CustomerCreateDto) {
+        val customer = customerMapper.customerCreateDtoToCustomer(customerCreateDto)
         println("Received customer registration: $customerCreateDto")
+        println("Mapped customer entity: $customer")
     }
 
 }
