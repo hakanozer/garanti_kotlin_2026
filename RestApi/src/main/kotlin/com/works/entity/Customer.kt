@@ -5,6 +5,7 @@ import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue
 import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
+import jakarta.persistence.ManyToMany
 
 @Entity
 data class Customer(
@@ -24,4 +25,7 @@ data class Customer(
 
     @Column(nullable = false)
     var password: String? = null,
+
+    @ManyToMany
+    var roles: MutableList<Role>? = null
 )
