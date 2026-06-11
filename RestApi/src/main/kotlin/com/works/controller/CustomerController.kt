@@ -1,7 +1,10 @@
 package com.works.controller
 
 import com.works.dto.CustomerCreateDto
-import com.works.dto.mappers.CustomerMapper
+import com.works.entity.Customer
+import com.works.service.CustomerService
+import jakarta.validation.Valid
+import org.springframework.validation.BindingResult
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
@@ -9,13 +12,13 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/api/v1/customers")
-class CustomerController( private val customerMapper: CustomerMapper ) {
+class CustomerController(
+    private val customerService: CustomerService
+) {
 
     @PostMapping("register")
-    fun register(@RequestBody customerCreateDto: CustomerCreateDto) {
-        val customer = customerMapper.customerCreateDtoToCustomer(customerCreateDto)
-        println("Received customer registration: $customerCreateDto")
-        println("Mapped customer entity: $customer")
+    fun register(@Valid @RequestBody customerCreateDto: CustomerCreateDto) : Customer {
+        return customerService.register(customerCreateDto)
     }
 
 }

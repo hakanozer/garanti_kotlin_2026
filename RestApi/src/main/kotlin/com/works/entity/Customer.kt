@@ -19,7 +19,7 @@ data class Customer(
     @Column(nullable = false, length = 100)
     var surname: String? = null,
 
-    @Column(nullable = false, length = 150)
+    @Column(nullable = false, length = 150, unique = true)
     var email: String? = null,
 
     @Column(nullable = false)
