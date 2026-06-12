@@ -20,6 +20,6 @@ class ProductController(
     )
 
     @GetMapping("list")
-    fun list() = productService.list()
+    suspend fun list() = productService.list()
 
 }

@@ -1,0 +1,29 @@
+services:
+
+  redis:
+    image: redis:7.4-alpine
+    container_name: redis-server
+    restart: unless-stopped
+
+    ports:
+      - "6379:6379"
+
+    command: >
+      redis-server
+      --requirepass StrongRedisPassword123
+      --appendonly yes
+      --appendfsync everysec
+      --maxmemory 512mb
+      --maxmemory-policy allkeys-lru
+
+    volumes:
+      - redis-data:/data
+
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "StrongRedisPassword123", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  redis-data:
