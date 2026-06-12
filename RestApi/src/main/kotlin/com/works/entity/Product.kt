@@ -8,7 +8,7 @@ import jakarta.persistence.Id
 import java.io.Serializable
 
 @Entity
-class Product : Serializable {
+class Product : BaseEntity(), Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

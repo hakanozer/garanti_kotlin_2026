@@ -1,0 +1,10 @@
+2026-06-12 14:19:50.680|USER=zehra@mail.com METHOD=GET URI=/api/v1/note/list STATUS=200 IP=0:0:0:0:0:0:0:1 AGENT="PostmanRuntime/7.54.0" LOCALE=tr_TR DURATION=64ms
+2026-06-12 14:20:11.438|USER=zehra@mail.com METHOD=GET URI=/api/v1/product/list STATUS=200 IP=0:0:0:0:0:0:0:1 AGENT="PostmanRuntime/7.54.0" LOCALE=tr_TR DURATION=262ms
+2026-06-12 14:23:16.753|USER=zehra@mail.com METHOD=GET URI=/api/v1/product/list STATUS=200 IP=0:0:0:0:0:0:0:1 AGENT="PostmanRuntime/7.54.0" LOCALE=tr_TR DURATION=265ms
+2026-06-12 15:00:13.742|USER=zehra@mail.com METHOD=POST URI=/api/v1/product/save STATUS=200 IP=0:0:0:0:0:0:0:1 AGENT="PostmanRuntime/7.54.0" LOCALE=tr_TR DURATION=345ms
+2026-06-12 15:01:34.076|USER=zehra@mail.com METHOD=POST URI=/api/v1/product/save STATUS=200 IP=0:0:0:0:0:0:0:1 AGENT="PostmanRuntime/7.54.0" LOCALE=tr_TR DURATION=347ms
+2026-06-12 15:04:05.727|USER=zehra@mail.com METHOD=POST URI=/api/v1/product/save STATUS=200 IP=0:0:0:0:0:0:0:1 AGENT="PostmanRuntime/7.54.0" LOCALE=tr_TR DURATION=415ms
+2026-06-12 15:05:17.463|USER=zehra@mail.com METHOD=POST URI=/api/v1/product/save STATUS=200 IP=0:0:0:0:0:0:0:1 AGENT="PostmanRuntime/7.54.0" LOCALE=tr_TR DURATION=344ms
+2026-06-12 15:08:00.380|USER=zehra@mail.com METHOD=POST URI=/api/v1/product/save STATUS=200 IP=0:0:0:0:0:0:0:1 AGENT="PostmanRuntime/7.54.0" LOCALE=tr_TR DURATION=341ms
+2026-06-12 15:14:08.809|USER=zehra@mail.com METHOD=POST URI=/api/v1/product/save STATUS=200 IP=0:0:0:0:0:0:0:1 AGENT="PostmanRuntime/7.54.0" LOCALE=tr_TR DURATION=330ms
+2026-06-12 15:15:41.202|USER=zehra@mail.com METHOD=POST URI=/api/v1/note/save STATUS=200 IP=0:0:0:0:0:0:0:1 AGENT="PostmanRuntime/7.54.0" LOCALE=tr_TR DURATION=102ms
